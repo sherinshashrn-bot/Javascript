@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game result</title>
+</head>
+<body>
+    <script>
+        
+
+
+    let mysteryLevel = Math.floor(Math.random() * 50) + 1;
+    console.log("Mystery Level:", mysteryLevel);
+
+    
+    let userInput = prompt("Enter your score (1-50):");
+    let userScore = Number(userInput);
+    console.log("Your Score:", userScore);
+
+    
+    let difference = Math.abs(mysteryLevel - userScore);
+    console.log("Absolute Difference:", difference);
+
+    
+    let sqrtScore = Math.sqrt(userScore);
+    console.log("Square Root of Your Score:", sqrtScore);
+
+  
+    console.log("Value of Pi:", Math.PI);
+
+    
+    let result = "20" * 5;
+    console.log(' ("20" * 5)=', result);
+
+    
+    let maxValue = Math.max(10, 20, mysteryLevel);
+    let minValue = Math.min(10, 20, mysteryLevel);
+    console.log("Highest Value:", maxValue);
+    console.log("Lowest Value:", minValue);
+    </script>
+</body>
+</html>
