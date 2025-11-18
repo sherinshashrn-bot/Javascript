@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>profile</title>
+</head>
+<body>
+
+<button id="checkAccessBtn">Check Admin Access</button>
+<p id="output"></p>
+
+<script>
+
+  
+  let userName = "John Doe";
+  let userAge = 22;
+  let userIsAdmin = true;
+
+  
+  const user = {
+    name: userName,
+    age: userAge,
+    isAdmin: userIsAdmin
+  };
+
+  document.getElementById("checkAccessBtn").addEventListener("click", function () {
+
+    
+    console.log("Does age exist?", "age" in user);
+
+    
+    const result = 
+      (user.age >= 18 && user.isAdmin) 
+      ? "Access Granted"
+      : "Access Denied";
+
+    document.getElementById("output").textContent = result;
+
+    
+    delete user.age;
+
+    console.log("User object after deletion:", user);
+  });
+
+</script>
+
+</body>
+</html>
