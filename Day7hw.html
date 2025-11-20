@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inputDate="2021-10-19";
+        var userDate=new Date(inputDate);
+        var currentDate=new date();
+        var uYear=userDate.getfullyear();
+        var month=userDate.getmonth();
+        var months=["january","february","march","april","may","june","july","august","september","october","november","december"];
+        var umonthName=months[month];
+        var udate=userdate.getDate();
+        var currentYear=currentDate.getfullyear();
+        var cMonth=currentDate.getmonth();
+        var cMonthname=months[cmonth];
+        var cDate=currentdate.getDate();
+        console.log("user input past date is "+umonthname+" "+udate+", "+uyear);
+        console.log("current date is "+cmonthname+" "+cdate+", "+currentyear);
+        var noFullyear=currentyear-uyear;
+        console.log(`${nofullyear}full years have passed since that date.`);
+        var msg=(nofullyear>1)?"it has been more than a year since tha date":"it has been less than a year since that date.";
+        console.log(msg);
+        </script>
+        </body>
+        </html>
+
+
+         
+       
