@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+</head>
+<body>
+    <script>
+        var jsonString = `{
+  "name": "Alice",
+  "feedback": "Thank you for the great service!"
+}`;
+
+
+var containsThank = (text) => {
+  return /thank/i.test(text); 
+};
+
+try {
+ 
+  var data = JSON.parse(jsonString);
+
+  
+  if (containsThank(data.feedback)) {
+    console.log("Positive feedback received");
+  } else {
+    console.log("Feedback noted");
+  }
+
+} catch (error) {
+  console.log("Invalid JSON:", error.message);
+}
+
+    </script>
+    
+</body>
+</html>
