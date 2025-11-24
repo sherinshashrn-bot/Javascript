@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment filtering</title>
+</head>
+<body>
+    <script>
+        function processComment(comment) {
+ 
+  
+  var processcomment = comment.replace(/(bad|ugly|stupid)/ig,"***");
+  console.log(processcomment)
+  var numberMatches = comment.match(/\d+/g);
+  var numberCount = numberMatches ? numberMatches.length : 0;
+  console.log(`The no of number is ${numbercount}`);
+  var capitalizedMatches = comment.match(/\b[A-Z][a-zA-Z]*/g);
+  var capitalizedCount = capitalizedMatches ? capitalizedMatches.length : 0;
+  console.log("capitalised word count:"+capitalisedcount);
+  return 
+  {
+    `newcomment: ${processcomment} numcount: ${numcount} capwords:${capitalisedmatches}`
+  }
+}
+   var input =
+  "I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great.";
+
+console.log(processComment(input));
+
+    </script>
+    
+</body>
+</html>
